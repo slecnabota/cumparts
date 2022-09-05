@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <meta name="title" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"> 
+    <link rel="stylesheet" href="css/service.min.css">
+</head>
+<body>
+    <header class="header wow animate__animated animate__fadeInDown">
+        <nav class="menu">
+            <div class="container__large">
+                <div class="menu__wrapper">
+                    <div class="menu__item">
+                        <a href="index.html" class="menu__link">Главная</a>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="dropdown" onmouseleave="myFunction2()">
+                            <a href="catalog.html" onmouseover="myFunction()" class="dropbtn" id="dropbtn">
+                                Бренды
+                            <img src="icons/arrow-down.svg" alt="">
+                            </a>
+                            <div id="myDropdown" class="dropdown-content">
+                              <a href="catalog-cummins.html">Cummins</a>
+                              <a href="catalog-weichai.html">Weichai</a>
+                              <a href="catalog-caterpillar.html">Caterpillar</a>
+                              <a href="catalog-fleetguard.html">Fleetguard</a>
+                              <a href="catalog-donaldson.html">Donaldson</a>
+                              <a href="catalog-shell.html">Shell</a>
+                              <a href="catalog-yuchai.html">Yuchai</a>
+                              <a href="catalog-howo.html">HOWO</a>
+                              <a href="catalog-xcmg.html">XCMG</a>
+                              <a href="catalog-liugong.html">LiuGong</a>
+                              <a href="catalog-komatsu.html">Komatsu</a>
+                              <a href="catalog-doosan.html">Doosan</a>
+                              <a href="catalog-shacman.html">Shacman</a>
+                            </div>
+                          </div>
+                          
+                    </div>
+
+                    <div class="menu__item">
+                        <a href="about.html" class="menu__link">О компании</a>
+                    </div>
+
+                    <div class="menu__item">
+                        <a href="service.html" class="menu__link">Сервис</a>
+                    </div>
+
+                    <div class="menu__item">
+                        <a href="contacts.html" class="menu__link">Контакты</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="header__main">
+            <div class="container__large">
+                <div class="header__wrapper">
+                    <div class="header__logo">
+                        <a href="index.html">
+                            <img src="img/header-logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="header__menu" id="menu">
+                        <span></span>
+                    </div>
+                    <div class="header__mob-wrp">
+                        <div class="menu__wrapper">
+                            <div class="menu__item">
+                                <a href="index.html" class="menu__link">Главная</a>
+                            </div>
+                            
+                            <div class="menu__item">
+                                <p class="accordion2">Бренды</p>
+                                <div class="panel2">
+                                    <a href="catalog-cummins.html">Cummins</a>
+                                    <a href="catalog-weichai.html">Weichai</a>
+                                    <a href="catalog-caterpillar.html">Caterpillar</a>
+                                    <a href="catalog-fleetguard.html">Fleetguard</a>
+                                    <a href="catalog-donaldson.html">Donaldson</a>
+                                    <a href="catalog-shell.html">Shell</a>
+                                    <a href="catalog-yuchai.html">Yuchai</a>
+                                    <a href="catalog-howo.html">HOWO</a>
+                                    <a href="catalog-xcmg.html">XCMG</a>
+                                    <a href="catalog-liugong.html">LiuGong</a>
+                                    <a href="catalog-komatsu.html">Komatsu</a>
+                                    <a href="catalog-doosan.html">Doosan</a>
+                                    <a href="catalog-shacman.html">Shacman</a>
+                                </div>
+                            </div>
+        
+                            <div class="menu__item">
+                                <a href="about.html" class="menu__link">О компании</a>
+                            </div>
+        
+                            <div class="menu__item">
+                                <a href="service.html" class="menu__link">Сервис</a>
+                            </div>
+        
+                            <div class="menu__item">
+                                <a href="contacts.html" class="menu__link">Контакты</a>
+                            </div>
+                        </div>
+                        <div class="header__search">
+                            <input type="text">
+                            <img src="icons/search.svg" alt="search">
+                        </div>
+                    </div>
+                    <div class="header__contacts">
+                        <a href="tel:+77771820004 " class="header__number">
+                            <img src="icons/call.svg" alt="number">
+                            <p>+7 777 182 00 04 </p>
+                        </a>
+                        <a href="https://wa.me/+77771820004" class="header__whatsapp">
+                            <img src="icons/whatsapp.svg" alt="whatsapp">
+                            <p>+7 777 182 00 04</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="service">
+        <div class="container__large">
+            <div class="service__wrapper">
+                <h1 class="service__title wow animate__animated animate__fadeInDown">
+                    Ремонт<br class="show-mob"> двигателей<br> и услуги<br class="show-mob"> выездного<br class="show-mob"> специалиста <br>
+                    
+                </h1>
+                <button class="btn service__btn wow animate__animated animate__fadeInUp" onclick="openModal()">Оставить заявку</button>
+            </div>
+            <div class="service__content">
+                <div class="service__text wow animate__animated animate__fadeInUp">
+                    <p class="service__desc">
+                        CUMPARTS — это не только двигатели и запчасти для<br>
+                        спецтехники. Это ещё и качественное сервисное обслуживание.<br>
+                        Наши опытные специалисты делают ремонт и обслуживание<br>
+                        спецтехники, электрооборудования, двигателей, а также<br>
+                        отдельных узлов и агрегатов.<br>
+                        <br>
+                        Мы осуществляем как стационарный ремонт в нашей<br>
+                        мастерской, так и выездное обслуживание по всему Казахстану.
+                    </p>
+                    <div class="service__list-img show-mob wow animate__animated animate__fadeInUp">
+                        <img src="img/service-icon.png" alt="img">
+                    </div>
+                    <div class="list-top wow animate__animated animate__fadeInUp">
+                        <p class="service__list-heading">
+                            В нашей сервисной мастерской доступны:
+                        </p>
+                        <ul class="service__list wow animate__animated animate__fadeInUp">
+                            <li class="service__list-item">Компьютерная диагностика;</li>
+                            <li class="service__list-item">Ремонт ДВС, КПП, редукторов;</li>
+                            <li class="service__list-item">Разборка/сборка/диагностика двигателей;</li>
+                            <li class="service__list-item">Ремонт топливной системы с заменой запасных частей;</li>
+                            <li class="service__list-item">Диагностика топливных систем Common rail;</li>
+                            <li class="service__list-item">Ремонт ГБЦ с заменой запасных частей;</li>
+                            <li class="service__list-item">Токарно-фрезерные работы;</li>
+                            <li class="service__list-item">Ремонт гидравлических систем;</li>
+                            <li class="service__list-item">Изготовление РТИ;</li>
+                            <li class="service__list-item">Oтключение мочевины Adblue;</li>
+                            <li class="service__list-item">Прошивка с Евро 5 и Евро 4 на Евро 3.</li>
+                        </ul>
+                    </div>
+                    <div class="service__list-bottom">
+                        <p class="service__list-heading wow animate__animated animate__fadeInUp">
+                            Возможности выездного сервисного обслуживания:
+                        </p>
+                        <ul class="service__list wow animate__animated animate__fadeInUp">
+                            <li class="service__list-item">Диагностика ДВС;</li>
+                            <li class="service__list-item">Диагностика и ремонт топливных систем;</li>
+                            <li class="service__list-item">Диагностика топливной системы;</li>
+                            <li class="service__list-item">Услуги автоэлектрика;</li>
+                            <li class="service__list-item">Выездное ТО;</li>
+                            <li class="service__list-item">Диагностика АКПП Shantui.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service__img hide-mob wow animate__animated animate__fadeInUp">
+                    <img src="img/service-icon.png" alt="img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="manuf">
+        <div class="container__small">
+            <h2 class="manuf__title wow animate__animated animate__fadeInUp">Работаем со всеми известными производителями</h2>
+            <div class="manuf__flex">
+                <div class="manuf__item wow animate__animated animate__fadeInUp">
+                    <div class="manuf__item-img">
+                        <img src="img/jcb.png" alt="">
+                    </div>
+                </div>
+                <div class="manuf__item wow animate__animated animate__fadeInUp">
+                    <div class="manuf__item-img">
+                        <img src="img/cummins.png" alt="">
+                    </div>
+                </div>
+                <div class="manuf__item wow animate__animated animate__fadeInUp">
+                    <div class="manuf__item-img">
+                        <img src="img/weich.png" alt="">
+                    </div>
+                </div>
+                <div class="manuf__item wow animate__animated animate__fadeInUp">
+                    <div class="manuf__item-img">
+                        <img src="img/cater.png" alt="">
+                    </div>
+                </div>
+                <div class="manuf__item wow animate__animated animate__fadeInUp">
+                    <div class="manuf__item-img">
+                        <img src="img/boart.png" alt="">
+                    </div>
+                </div>
+                <div class="manuf__item wow animate__animated animate__fadeInUp">
+                    <div class="manuf__item-img">
+                        <img src="img/shantui.png" alt="">
+                    </div>
+                </div>
+                <div class="manuf__item wow animate__animated animate__fadeInUp">
+                    <div class="manuf__item-img">
+                        <img src="img/diesel.png" alt="">
+                    </div>
+                </div>
+                <div class="manuf__item wow animate__animated animate__fadeInUp">
+                    <div class="manuf__item-img">
+                        <img src="img/howo.png" alt="">
+                    </div>
+                </div>
+                <div class="manuf__item wow animate__animated animate__fadeInUp">
+                    <div class="manuf__item-img">
+                        <img src="img/doosan.png" alt="">
+                    </div>
+                </div>
+                <div class="manuf__item wow animate__animated animate__fadeInUp">
+                    <div class="manuf__item-img">
+                        <img src="img/xcmg.png" alt="">
+                    </div>
+                </div>
+                <div class="manuf__item wow animate__animated animate__fadeInUp">
+                    <div class="manuf__item-img">
+                        <img src="img/shacman.png" alt="">
+                    </div>
+                </div>
+                <div class="manuf__item wow animate__animated animate__fadeInUp">
+                    <div class="manuf__item-img">
+                        <img src="img/liugong.png" alt="">
+                    </div>
+                </div>
+                <div class="manuf__item wow animate__animated animate__fadeInUp">
+                    <div class="manuf__item-img">
+                        <img src="img/kompng.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form">
+        <div class="container__small">
+            <h2 class="form__title wow animate__animated animate__fadeInUp">Обратитесь к нам, мы будем рады помочь с ремонтом любого оборудования</h2>
+            <div class="form__subtitle wow animate__animated animate__fadeInUp">Чтобы оставить заявку на сервисное обслуживание или получить консультацию заполните форму ниже, кратко опишите проблему, и наши специалисты свяжутся с вами в ближайшее время.</div>
+            <div class="form__wrap wow animate__animated animate__fadeInUp">
+                <form class="form__form">
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="tel" placeholder="+7 (921) 555 55 55">
+                    <label>
+                        <span>Кратко опишите проблему</span>
+                        <textarea cols="30" rows="10"></textarea>
+                    </label>
+                    <input type="submit" value="Отправить">
+                </form>
+                <div class="form__agree">Отправляя свои данные Вы соглашаетесь на обработку персональных данных</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container__large">
+            <div class="footer__wrapper">
+                <div class="footer__main">
+                    <img src="img/header-logo.png" alt="logo" class="footer__logo">
+                    <div class="footer__grid">
+                        <div class="footer__grid-left">
+                            <div class="footer__grid_2c">
+                                <div class="footer__grid-item">
+                                    <div class="footer__grid-heading">Отдел продаж:</div>
+                                    <div class="footer__grid-links">
+                                        <a href="tel:+77771820004" class="footer__grid-link">
+                                            <img src="icons/call.svg" alt="img">
+                                            +7 777 182 00 04
+                                        </a>
+                                        <a href="https://wa.me/+77771820004" class="footer__grid-link">
+                                            <img src="icons/whatsapp.svg" alt="img">
+                                            +7 777 182 00 04
+                                        </a>
+                                        <a href="" class="footer__grid-link-mob">
+                                            <img src="icons/address.svg" alt="address">
+                                            Рембаза:<br> 
+                                            г. Усть-Каменогорск,<br>
+                                            Ул. Пограничная 58/7
+                                        </a>
+                                        <a href="mailto:cumparts@mail.ru" class="footer__grid-link-mob">
+                                            <img src="icons/mail.svg" alt="address">
+                                            cumparts@mail.ru
+                                        </a>
+                                        <a href="mailto:cumparts@mail.ru" class="footer__grid-link footer__grid-link-hide">
+                                            <img src="icons/mail.svg" alt="">
+                                            cumparts@mail.ru
+                                        </a>
+                                        <a href="" class="footer__grid-link footer__grid-link-hide">
+                                            <img src="icons/address.svg" alt="">
+                                            г. Усть-Каменогорск,<br> 
+                                            Ул. Тохтарова 51/оф.51
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="footer__grid-item">
+                                    <div class="footer__grid-heading">Сервисный отдел:</div>
+                                    <div class="footer__grid-links">
+                                        <a href="tel:+77051009083" class="footer__grid-link">
+                                            <img src="icons/call.svg" alt="">
+                                            +7 705 100 9083
+                                        </a>
+                                        <a href="https://wa.me/+77051009083" class="footer__grid-link">
+                                            <img src="icons/whatsapp.svg" alt="">
+                                            +7 705 100 9083
+                                        </a>
+                                        <a href="mailto:cumparts@mail.ru" class="footer__grid-link">
+                                            <img src="icons/mail.svg" alt="">
+                                            cummins-uka@mail.ru
+                                        </a>
+                                        <a href="" class="footer__grid-link">
+                                            <img src="icons/address.svg" alt="">
+                                            г. Усть-Каменогорск,<br>
+                                            Ул. Пограничная 58/7
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer__site">
+                                <a href="https://webdigital.kz/">Разработка сайта Webdigital.kz</a>
+                            </div>
+                        </div>
+                        <div class="footer__grid-3c">
+                            <div class="footer__grid-item">
+                                <div class="footer__grid-heading">
+                                    Клиенту
+                                </div>
+                                <a href="index.html" class="footer__grid-3c-link">Главная</a>
+                                <a href="about.html" class="footer__grid-3c-link">О компании</a>
+                                <a href="service.html" class="footer__grid-3c-link">Сервис</a>
+                                <a href="contacts.html" class="footer__grid-3c-link">Контакты</a>
+                            </div>
+                            <div class="footer__grid-item">
+                                <div class="footer__grid-heading">
+                                    Бренды
+                                </div>
+                                <div class="footer__grid-3c-2c">
+                                    <a href="options.html" class="footer__grid-3c-link">Cummins</a>
+                                    <a href="" class="footer__grid-3c-link">HOWO</a>
+                                    <a href="" class="footer__grid-3c-link">Weichai</a>
+                                    <a href="" class="footer__grid-3c-link">XCMG</a>
+                                    <a href="" class="footer__grid-3c-link">Caterpillar</a>
+                                    <a href="" class="footer__grid-3c-link">LiuGong</a>
+                                    <a href="" class="footer__grid-3c-link">Fleetguard</a>
+                                    <a href="" class="footer__grid-3c-link">Shacman</a>
+                                    <a href="" class="footer__grid-3c-link">Donaldson</a>
+                                    <a href="" class="footer__grid-3c-link">Doosan</a>
+                                    <a href="" class="footer__grid-3c-link">Shell</a>
+                                    <a href="" class="footer__grid-3c-link">Komatsu</a>
+                                    <a href="" class="footer__grid-3c-link">Yuchai</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__btn-mob-wrapper">
+                    <button onclick="openModal()" class="btn footer__btn-mob">
+                        Связаться с нами
+                    </button>
+                    <div class="footer__site">
+                        <a href="https://webdigital.kz/">Разработка сайта Webdigital.kz</a>
+                    </div>
+                </div>
+                <div class="footer__form">
+                    <div class="footer__form-title">
+                        Остались вопросы?
+                    </div>
+                    <p class="footer__form-info">
+                        Наши консультанты свяжутся с Вами, <br>
+                        и ответят на все интересующие вопросы.
+                    </p>
+                    <form action="#" class="footer-form">
+                        <input type="text" placeholder="Ваше имя">
+                        <input type="text" placeholder="+7 (921) 555 55 55">
+                        <button class="btn footer__btn">Отправить</button>
+                        <p class="footer__warning">Отправляя свои данные Вы соглашаетесь<br>
+                        на обработку персональных данных</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>  
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close"></span>
+            <div class="modal-content-space">
+                <div class="footer__form">
+                    <p class="footer__form-info">
+                        Наши консультанты свяжутся с Вами, <br>
+                        и ответят на все интересующие вопросы.
+                    </p>
+                    <form action="#" class="footer-form">
+                        <input type="text" placeholder="Ваше имя">
+                        <input type="text" placeholder="+7 (921) 555 55 55">
+                        <button class="btn footer__btn">Отправить</button>
+                        <p class="footer__warning">Отправляя свои данные Вы соглашаетесь<br>
+                        на обработку персональных данных</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="js/wow-init.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/modal-comm.js"></script>
+</body>
+</html>
